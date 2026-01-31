@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.3.2
+  version: "0.3.3"
 
 package:
   name: ansicolor
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/ansicolor/ansicolor-${{ version }}.tar.gz
-  sha256: 3b840a6b1184b5f1568635b1adab28147947522707d41ceba02d5ed0a0877279
+  sha256: 6de60837fb322b9fb8c8863061504688520bd0aa62defab43dbf4f2c011dafda
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
